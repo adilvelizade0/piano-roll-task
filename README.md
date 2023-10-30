@@ -27,3 +27,7 @@ Functionality
 ![image](https://ik.imagekit.io/adilvalizada/PianoTask/CleanShot%202023-10-30%20at%2015.35.18@2x.png?updatedAt=1698676968584)
 ![image](https://ik.imagekit.io/adilvalizada/PianoTask/CleanShot%202023-10-30%20at%2015.34.36@2x.png?updatedAt=1698676968547)
 ![image](https://ik.imagekit.io/adilvalizada/PianoTask/CleanShot%202023-10-30%20at%2015.34.46@2x.png?updatedAt=1698676968356)
+
+### Important Note
+* Hold and drag to select piano roles
+* If you encounter an error, please reload the page
