@@ -1,0 +1,29 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #154151;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* optional drop shadow */
+}
+
+.logo-container img {
+  height: 40px;
+  width: auto;
+  fill: white;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
