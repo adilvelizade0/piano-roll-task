@@ -171,7 +171,6 @@ export default class PianoRoll extends Component {
   constructor(props) {
     super(props);
 
-    // #1
     this.state = {
       isSelecting: false,
       startX: 0,
@@ -181,7 +180,6 @@ export default class PianoRoll extends Component {
       overlayStyle: {},
       isSelected: false,
     };
-    // -----> 1
 
     this.svgElementRef = React.createRef();
     this.end = null;
@@ -308,7 +306,6 @@ export default class PianoRoll extends Component {
     }
   }
 
-  // #2
   handleMouseUp = () => {
     if (!this.state.isSelecting) {
       return;
@@ -371,8 +368,6 @@ export default class PianoRoll extends Component {
 
     this.setState({ overlayStyle });
   };
-
-  // -----> 2
 
   render() {
     const { isSelecting, overlayStyle, isSelected } = this.state;

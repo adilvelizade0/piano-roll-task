@@ -3,10 +3,10 @@ import PianoRoll from "../PianoRoll/PianoRoll.component.jsx";
 import PianoRollCardWrapper from "./PianoRollCard.styles.js";
 import { useNavigate } from "react-router-dom";
 
-const PianoRollCard = ({ sequence, rollId, data }) => {
+const PianoRollCard = ({ sequence, rollId, data, isLink }) => {
   const svgElement = React.useRef(null);
   const navigate = useNavigate();
-
+  console.log(isLink);
   return (
     <PianoRollCardWrapper
       id={`pianoRollCard-${rollId}`}
@@ -15,7 +15,9 @@ const PianoRollCard = ({ sequence, rollId, data }) => {
       <PianoRoll svgElement={svgElement} sequence={sequence} />
       <h6
         onClick={() => {
-          navigate(`/piano-roll/${rollId}`, { state: { sequence, data } });
+          if (isLink) {
+            navigate(`/piano-roll/${rollId}`, { state: { sequence, data } });
+          }
         }}
         className="mt-3"
       >

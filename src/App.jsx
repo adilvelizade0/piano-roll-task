@@ -2,7 +2,6 @@ import { useEffect, useState, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import PianoRollCard from "./components/PianoRollCard/PianoRollCard.component.jsx";
 import { Audio } from "react-loader-spinner";
-import Navbar from "./components/Navbar/Navbar.component.jsx";
 
 function App() {
   const [data, setData] = useState(null);
@@ -45,7 +44,12 @@ function App() {
             <div className="row">
               {data.map((item, index) => (
                 <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <PianoRollCard data={data} rollId={index} sequence={item} />
+                  <PianoRollCard
+                    isLink={true}
+                    data={data}
+                    rollId={index}
+                    sequence={item}
+                  />
                 </div>
               ))}
             </div>
